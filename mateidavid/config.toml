@@ -4,6 +4,41 @@ languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
 
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+#googleAnalytics = ""
+# disqusShortname""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Matei David"
+
+
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
@@ -32,6 +67,25 @@ paginate     = 10
     tag      = "tags"
     series   = "series"
 
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/__mateidavid"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/matei207"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/mateidavid"
+
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://stackoverflow.com/users/7070273/wink207"
+
+  [[params.social]]
+    name = "dev"
+    url = "https://dev.to/__mateidavid"
 [languages]
   [languages.en]
     title = "Matei David's WIP blog"
@@ -49,7 +103,12 @@ paginate     = 10
     # alt = "Your example logo alt text"
 
   # And you can even create generic menu
+  [menu]
+    [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
   [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
