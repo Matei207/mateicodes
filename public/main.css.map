@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/Users/mateidavid/workspace/org/blog/mateicodes/mateidavid",
+	"sourceRoot": "/Users/mateidavid/workspace/org/blog/mateicodes",
 	"sources": [
 		"themes/hello-friend-ng/assets/scss/main.scss",
 		"themes/hello-friend-ng/assets/scss/_normalize.scss",
